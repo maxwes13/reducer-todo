@@ -1,4 +1,3 @@
-import React, { useState, useReducer } from "react";
 
 
 export const initialState = [
@@ -17,7 +16,7 @@ export const todoReducer = (state, action) => {
                 {
                     item: action.payload,
                     completed: false,
-                    id: 1234
+                    id: Date.now()
                 }];
 
         case "TOGGLE":
